@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Silver South";
+  src: url(../fonts/SilverSouth.otf);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+.container {
+  position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.btn {
+  padding: 0.3125rem 0.9375rem;
+  border: 1px solid #0a1a38;
+  border-radius: 2.5rem;
+  color: #0a1a38;
+  text-decoration: none;
+}
+
+header {
+  background: linear-gradient(180deg, #0a1a38 0%, rgba(0, 0, 0, 0) 100%), url(../images/hero_bg.png) center center/cover no-repeat;
+}
+header .top-nav {
+  background: linear-gradient(180deg, #0a1a38 0%, rgba(0, 0, 0, 0) 100%);
+  color: #fff;
+}
+header .top-nav .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top-nav .container .logo a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+header .top-nav .container .main-nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
+header .top-nav .container .main-nav ul li {
+  display: flex;
+  flex-direction: row;
+}
+header .top-nav .container .main-nav ul li a {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+header .top-nav .container .main-nav ul ul {
+  display: block;
+  height: 200%;
+  max-height: 0;
+  overflow: hidden;
+}
+header .top-nav .container .lang-select {
+  display: flex;
+}
+header .hero .container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+header .hero .container h1,
+header .hero .container h1 span {
+  font-family: "Silver South", "Urbanist", sans-serif;
+}
+header .hero .container h1 {
+  font-weight: 400;
+  font-size: 86px;
+  line-height: 124px;
+  color: #18abbb;
+  text-align: center;
+}
+header .hero .container h1 span {
+  color: #fff;
+  display: block;
+}
+header .hero .container .hero-cta {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=common.css.map */

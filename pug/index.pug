@@ -1,0 +1,54 @@
+- const thisPage = { name: "home"}
+
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title Keeneye Traveller
+
+        include ./includes/stylesheets
+    body
+        header
+            .top-nav
+                .container 
+                    .logo
+                        a(href="#", title="title") Sample Logo
+                    nav.main-nav
+                        ul
+                            li
+                                
+                                a(href="#", title="title").
+                                    #[.chevron-down: img(src="images/chevron_down.svg", alt="")]
+                                    Destinations 
+                                ul
+                                    li Dropdown Item
+                                    li Dropdown Item
+                            li
+                                a(href="#", title="title"). 
+                                    #[.chevron-down: img(src="images/chevron_down.svg", alt="")]
+                                    Travel Styles 
+                                ul
+                                    li Dropdown Item
+                            li
+                                
+                                a(href="#", title="title").
+                                    #[.chevron-down: img(src="images/chevron_down.svg", alt="")]
+                                    About Us
+                                ul
+                                    li Dropdown Item
+                                    li Dropdown Item
+                            li
+                                a(href="#", title="title") Contact Us 
+                    .lang-select
+                        .choice EN 
+                        img(src="images/globe.svg", alt="select languages")
+            .hero 
+                .container 
+                    h1 The world is yours #[span to explore]
+                    a.btn.hero-cta(href="#") Make an Inquiry 
+        
+
+
+
+
+        include ./includes/scripts

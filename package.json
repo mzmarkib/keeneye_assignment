@@ -1,0 +1,20 @@
+{
+	"name": "keeneye_assignment",
+	"version": "1.0.0",
+	"description": "Assignment for keeneye.solutuions",
+	"main": "dist/index.html",
+	"author": "mzmarkib",
+	"license": "ISC",
+	"scripts": {
+		"pug-watch": "pug -w ./pug/ -o ./dist/ -P",
+		"watch-sass": "sass --watch ./scss/:dist/css/",
+		"serve-live": "live-server --open=./dist/",
+		"dev": "concurrently --kill-others \"npm run pug-watch\" \"npm run watch-sass\" \"npm run serve-live\""
+	},
+	"devDependencies": {
+		"concurrently": "^7.5.0",
+		"live-server": "^1.1.0",
+		"pug": "^3.0.2",
+		"sass": "^1.56.1"
+	}
+}
