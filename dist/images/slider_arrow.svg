@@ -1,0 +1,8 @@
+<svg width="392" height="392" viewBox="0 0 392 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="slider_arrow">
+<path class="outer-3" d="M1.95772 195.092C1.95773 87.8981 88.8559 0.999956 196.05 0.999961C303.244 0.999966 390.143 87.8981 390.143 195.092" stroke="#00ABBC" stroke-dasharray="15 15"/>
+<path class="outer-1" d="M158.22 195.4C158.22 175.503 174.35 159.373 194.247 159.373C214.145 159.373 230.274 175.503 230.274 195.4" stroke="#00ABBC" stroke-linecap="round" stroke-dasharray="15 15"/>
+<path class="outer-2" d="M196.649 299.879C138.947 299.879 92.1709 253.102 92.1709 195.4C92.1709 137.698 138.947 90.9219 196.649 90.9219" stroke="#00ABBC" stroke-dasharray="15 15"/>
+<path class="center" d="M205.056 196.001L183.439 196.001M205.056 196.001L196.95 186.994M205.056 196.001L196.95 205.008" stroke="#00ABBC" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

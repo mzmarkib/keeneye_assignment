@@ -1,0 +1,8 @@
+<svg width="567" height="567" viewBox="0 0 565 567" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="arrow_down">
+<path class="rotate" id="outer-3" d="M281.468 0.99975C437.439 0.999763 563.879 127.44 563.879 283.411C563.879 439.382 437.439 565.822 281.468 565.822" stroke="white" stroke-width="1" stroke-dasharray="6 10"/>
+<path class="rotate" id="outer-2" d="M129 284.283C129 200.324 197.061 132.263 281.019 132.263C364.978 132.263 433.039 200.324 433.039 284.283" stroke="white" stroke-width="1" stroke-dasharray="6 10"/>
+<path class="rotate" id="outer-1" d="M281.02 228.367C309.971 228.367 333.44 251.837 333.44 280.788C333.44 309.739 309.971 333.208 281.02 333.208" stroke="white" stroke-width="1" stroke-linecap="round" stroke-dasharray="6 10"/>
+<path id="center" d="M280.146 296.514L280.146 265.062M280.146 296.514L293.251 284.72M280.146 296.514L267.041 284.72" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

@@ -4,7 +4,11 @@ doctype
 html(lang='en')
     head
         meta(charset='utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+
         title Keeneye Traveller
+
 
         include ./includes/stylesheets
     body
@@ -45,8 +49,141 @@ html(lang='en')
             .hero 
                 .container 
                     h1 The world is yours #[span to explore]
-                    a.btn.hero-cta(href="#") Make an Inquiry 
+                    a.btn.btn-hero-cta(href="#") Make an Inquiry
+                    a(href="#why-travel").arrow
+                        include ../dist/images/arrow_down.svg
+                    
+        section.why-travel#why-travel
+            .container
+                h2 Why travel?
+            .slider
+                .slide
+                    img(src="images/why_travel/image_1.png", alt="")
+                    h3 Yoga Retreat
+                .slide
+                    img(src="images/why_travel/image_2.png", alt="")
+                    h3 Get your Vitamin Sea
+                .slide
+                    img(src="images/why_travel/image_3.png", alt="")
+                    h3 MICE
+                .slide
+                    img(src="images/why_travel/image_4.png", alt="")
+                    h3 Romantic Getaways
+                .slide
+                    img(src="images/why_travel/image_5.png", alt="")
+                    h3 Be an Explorer
+                .slide
+                    img(src="images/why_travel/image_6.png", alt="")
+                    h3 Destination Weddings
         
+        section.who-we-are 
+            .container 
+                h2 Who we are
+
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+        section.what-we-offer 
+            .container 
+                h2 What we offer
+
+                .icon-flow 
+                    .icon-card 
+                        .icon-outer(Style="--offset:0deg; ")
+                            img(src="./images/what_we_offer/tailor_made.svg")
+                        .icon-label Tailor Made 
+                    .icon-card 
+                        .icon-outer(Style="--offset:90deg; ")
+                            img(src="./images/what_we_offer/multilingual.svg")
+                        .icon-label Multilingual 
+                    .icon-card 
+                        .icon-outer(Style="--offset:180deg; ")
+                            img(src="./images/what_we_offer/experties.svg")
+                        .icon-label Experties 
+                    .icon-card 
+                        .icon-outer(Style="--offset:270deg; ")
+                            img(src="./images/what_we_offer/satisfaction.svg")
+                        .icon-label Satisfaction 
+                    .icon-card 
+                        .icon-outer(Style="--offset:0deg; ")
+                            img(src="./images/what_we_offer/sustainable.svg")
+                        .icon-label Sustainable 
+        
+        section.travel-packages
+            .container 
+                h2 The perfect package #[br] just for you
+                a(href="#").btn.cta-packages  View all packages
+
+            .slider-wrapper 
+                .container.slider-controls
+                    .slide-next 
+                        include ../dist/images/slider_arrow.svg
+                    .slide-prev 
+                        include ../dist/images/slider_arrow.svg
+                .slider
+                    .slide
+                        img(src="images/travel_packages/seychelles.png", alt="")
+                        h3 Seychelles
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor. 
+                    .slide
+                        img(src="images/travel_packages/maldives.png", alt="")
+                        h3 Maldives
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor. 
+                    .slide
+                        img(src="images/travel_packages/sri_lanka.png", alt="")
+                        h3 Sri Lanka
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor. 
+                    .slide
+                        img(src="images/travel_packages/bali.png", alt="")
+                        h3 Bali
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor. 
+                    .slide
+                        img(src="images/travel_packages/thailand.png", alt="")
+                        h3 Thailand
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor. 
+
+        section.travel-destinations
+            .container 
+                h2 Welcome To #[br] Your Perfect Travel Destination
+
+                .video-frame.wow.zoomIn.zoomOut
+                    .plyr__video-embed#destination-player(data-plyr-provider="youtube" data-plyr-embed-id="YLYRSVFN5go" poster="images/video_poster.png")
+
+                h2 Enjoy your dream vacation #[br] with us!
+
+        footer 
+            .container
+                h3 Reach Out 
+                //- .contact-info
+                .contact 
+                    h3 Sri Lanka
+                    address. 
+                        Address line 1 #[br]
+                        Address line 2
+                    a(href="mailto:contact@comapny.com") contact@comapny.com
+                    a(href="tel:94771231212") +(94) 77 123 12 12
+                    a(href="https://wa.me/94771231212") +(94) 77 123 12 12 (WhatsApp)
+                .contact 
+                    h3 UAE
+                    address. 
+                        Address line 1 #[br]
+                        Address line 2
+                    a(href="mailto:contact@comapny.com") contact@comapny.com
+                    a(href="tel:94771231212") +(94) 77 123 12 12
+                    a(href="https://wa.me/94771231212") +(94) 77 123 12 12 (WhatsApp)
+                nav.footer-nav 
+                    ul 
+                        li: a(href="#") About
+                        li: a(href="#") Destinations
+                        li: a(href="#") Packages
+                        li: a(href="#") Careers
+                    ul.social-links
+                        li: a(href="#"): img(src="images/twitter.svg")
+                        li: a(href="#"): img(src="images/facebook.svg")
+                        li: a(href="#"): img(src="images/insta.svg")
+                        li: a(href="#"): img(src="images/linkedin.svg")
+                    
 
 
 

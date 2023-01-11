@@ -1,0 +1,284 @@
+@import "includes/variables";
+@import "includes/functions";
+
+section.why-travel {
+	background-color: $color-primary-dark;
+	color: #fff;
+
+	h2 {
+		color: #fff;
+	}
+
+	.slider {
+		display: none; //hide slider when loading
+		overflow-x: hidden;
+
+		.slick-active {
+			padding: 1rem;
+			padding-top: 5rem;
+			transition: 0.9s;
+		}
+		.slick-center {
+			padding-top: 10rem;
+		}
+		.slick-slide {
+			// max-width: fit-content;
+			transition: 0.9s;
+
+			&:last-child {
+				display: none;
+			}
+		}
+		.slide {
+			max-width: 400px;
+			margin: 0 auto;
+
+			img {
+				width: 100%;
+				// height: 100%;
+				object-fit: contain;
+			}
+			h3 {
+				text-align: center;
+				font-weight: 400;
+				margin-top: 0.5rem;
+			}
+		}
+	}
+	// display slider after loading
+	.slick-initialized {
+		display: block;
+	}
+}
+section.who-we-are {
+	background-color: $color-primary-dark;
+	color: #fff;
+
+	h2 {
+		color: #fff;
+	}
+	p {
+		text-align: center;
+		max-width: 1000px;
+		margin: 0 auto;
+		margin-top: rem(30);
+	}
+}
+section.what-we-offer {
+	background-color: $color-primary-dark;
+	color: #fff;
+
+	h2 {
+		color: #fff;
+	}
+
+	.icon-flow {
+		display: flex;
+		gap: 1rem;
+		justify-content: space-between;
+		margin-top: 3rem;
+		position: relative;
+		flex-wrap: wrap;
+
+		.icon-card {
+			min-width: rem(100);
+
+			.icon-outer {
+				--offset: 0deg;
+				position: relative;
+				border-radius: 100%;
+				display: flex;
+				width: rem(100);
+				height: rem(100);
+				padding: 2rem;
+
+				img {
+					margin: auto;
+					object-fit: contain;
+					width: 2rem;
+					height: 2rem;
+				}
+				&:after {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					width: 100%;
+					height: 100%;
+					border-radius: 100%;
+					border: 2px dashed #fff;
+					border-left: none;
+					border-top: none;
+					transform: scale(1.2) rotate(var(--offset));
+					transition: 0.3s;
+				}
+				&:hover {
+					cursor: pointer;
+
+					&:after {
+						transform: scale(1.2) rotate(calc(var(--offset) + 180deg));
+					}
+				}
+			}
+			&:nth-child(odd) {
+				.icon-outer {
+					background-color: $color-primary-light;
+				}
+			}
+			&:nth-child(even) {
+				padding-top: 5rem;
+				.icon-outer {
+					background-color: $color-secondary-dark;
+				}
+			}
+			.icon-label {
+				margin-top: 1rem;
+				text-align: center;
+				font-weight: 400;
+				font-size: rem(20);
+				line-height: rem(43);
+			}
+		}
+	}
+}
+section.travel-packages {
+	background-color: $color-bg-light;
+	color: $color-primary-dark;
+
+	h2 {
+		color: $color-primary-dark;
+	}
+	.cta-packages {
+		display: block;
+		width: fit-content;
+		margin: 0 auto;
+		margin-top: 2rem;
+		color: $color-secondary-dark;
+		transition: 0.3s;
+		border-color: $color-secondary-dark;
+
+		&:hover {
+			color: $color-bg-light;
+			background-color: $color-secondary-dark;
+		}
+	}
+
+	.slider-wrapper {
+		.slider-controls {
+			position: relative;
+			z-index: 1;
+
+			.slide-next,
+			.slide-prev {
+				position: absolute;
+				top: rem(-150);
+				cursor: pointer;
+
+				svg {
+					width: 100%;
+				}
+
+				.outer-1,
+				.outer-2,
+				.outer-3 {
+					transform-origin: center;
+				}
+				.outer-1 {
+					transition: 0.3s;
+				}
+				.outer-2 {
+					transition: 0.6s;
+				}
+				.outer-3 {
+					transition: 0.9s;
+				}
+
+				&:hover {
+					.outer-1 {
+						transform: rotate(180deg);
+					}
+					.outer-2 {
+						transform: rotate(180deg);
+					}
+					.outer-3 {
+						transform: rotate(180deg);
+					}
+				}
+			}
+			.slide-next {
+				right: 0;
+			}
+			.slide-prev {
+				transform: rotate(180deg);
+			}
+		}
+		.slider {
+			display: none; //hide slider when loading
+			overflow-x: hidden;
+
+			.slick-active {
+				padding: 1rem;
+				padding-top: 5rem;
+				transition: 0.9s;
+			}
+			.slick-center {
+				padding-top: 10rem;
+			}
+			.slick-slide {
+				// max-width: fit-content;
+				transition: 0.9s;
+
+				&:last-child {
+					display: none;
+				}
+			}
+			.slide {
+				max-width: 400px;
+				margin: 0 auto;
+
+				img {
+					width: 100%;
+					// height: 100%;
+					object-fit: contain;
+				}
+				h3 {
+					text-align: center;
+					font-weight: 700;
+					margin-top: 0.5rem;
+				}
+				p {
+					padding: 1rem;
+					text-align: center;
+				}
+			}
+		}
+		// display slider after loading
+		.slick-initialized {
+			display: block;
+		}
+	}
+}
+section.travel-destinations {
+	.container {
+		.video-frame {
+			--plyr-color-main: #18abbb; //color scheme for player
+
+			border-radius: 50px;
+			overflow: hidden;
+			max-width: 1000px;
+			margin: 4rem auto;
+
+			.plyr__video-embed {
+				border-radius: rem(40);
+			}
+			.plyr__controls {
+				padding: 1.5rem;
+			}
+			.plyr__control--overlaid {
+				padding: 2rem;
+			}
+		}
+	}
+}

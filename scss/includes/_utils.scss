@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $font-regular;
+	font-size: rem(20);
+}
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+	position: relative;
+	max-width: 1366px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+.btn {
+	padding: rem(5) rem(15);
+	border: 1px solid $color-primary-dark;
+	border-radius: rem(40);
+	color: $color-primary-dark;
+	text-decoration: none;
+	font-size: rem(20);
+
+	&-hero-cta {
+		display: block;
+		width: fit-content;
+		margin: 0 auto;
+		color: #fff;
+		border: 2px solid #fff;
+		transition: 0.3s;
+
+		&:hover {
+			background-color: #fff;
+			color: $color-primary-dark;
+		}
+	}
+}
+
+.arrow {
+	.rotate {
+		transform-origin: center;
+		animation-name: rotate-clockwise;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		stroke: 1px solid red;
+	}
+	#outer-1 {
+		animation-duration: 3s;
+		animation-direction: forwards;
+	}
+	#outer-2 {
+		animation-duration: 6s;
+		animation-direction: reverse;
+	}
+	#outer-3 {
+		animation-duration: 9s;
+		animation-direction: forwards;
+	}
+}
+
+@keyframes rotate-clockwise {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+section,
+footer {
+	padding: 4rem 0;
+	h2 {
+		text-align: center;
+		color: $color-primary-dark;
+		font-weight: 700;
+		font-size: rem(56);
+	}
+}
